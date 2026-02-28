@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "keywords.schema.json",
+  "title": "SEO Keywords",
+  "description": "리서치 에이전트(researcher)의 키워드 출력 스키마",
+  "type": "object",
+  "required": ["seed_keyword", "main_keywords"],
+  "properties": {
+    "seed_keyword": {
+      "type": "string",
+      "description": "분석 기준 키워드"
+    },
+    "analysis_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "main_keywords": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["keyword", "search_intent", "priority"],
+        "properties": {
+          "keyword": { "type": "string" },
+          "search_intent": {
+            "type": "string",
+            "enum": ["transactional", "informational", "comparison", "navigational"]
+          },
+          "funnel_stage": {
+            "type": "string",
+            "enum": ["TOFU", "MOFU", "BOFU"]
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          },
+          "suggested_section": { "type": "string" },
+          "monthly_search_estimate": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          }
+        }
+      }
+    },
+    "sub_keywords": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "keyword": { "type": "string" },
+          "search_intent": { "type": "string" },
+          "priority": { "type": "string" }
+        }
+      }
+    },
+    "long_tail_keywords": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "negative_keywords": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "section_keyword_map": {
+      "type": "object",
+      "properties": {
+        "hero": { "type": "array", "items": { "type": "string" } },
+        "pain_point": { "type": "array", "items": { "type": "string" } },
+        "features": { "type": "array", "items": { "type": "string" } },
+        "comparison": { "type": "array", "items": { "type": "string" } },
+        "social_proof": { "type": "array", "items": { "type": "string" } },
+        "cta": { "type": "array", "items": { "type": "string" } },
+        "faq": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

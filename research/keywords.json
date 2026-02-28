@@ -1,0 +1,207 @@
+{
+  "seed_keyword": "국가보훈 장해진단서 발급기관 확대",
+  "main_keywords": [
+    {
+      "keyword": "장해진단서",
+      "search_intent": "informational",
+      "priority": "highest",
+      "suggested_section": "hero"
+    },
+    {
+      "keyword": "장해진단서 발급 병원",
+      "search_intent": "transactional",
+      "priority": "highest",
+      "suggested_section": "hospital_map"
+    },
+    {
+      "keyword": "보훈 장해진단서",
+      "search_intent": "informational",
+      "priority": "high",
+      "suggested_section": "policy_overview"
+    },
+    {
+      "keyword": "상이등급 신체검사",
+      "search_intent": "informational",
+      "priority": "high",
+      "suggested_section": "how_it_works"
+    },
+    {
+      "keyword": "보훈병원 신체검사 대체",
+      "search_intent": "comparative",
+      "priority": "high",
+      "suggested_section": "before_after"
+    }
+  ],
+  "sub_keywords": [
+    {
+      "keyword": "국가유공자 장해진단서",
+      "search_intent": "informational",
+      "priority": "high"
+    },
+    {
+      "keyword": "보훈 위탁병원",
+      "search_intent": "local",
+      "priority": "high"
+    },
+    {
+      "keyword": "장해진단서 서식",
+      "search_intent": "transactional",
+      "priority": "medium"
+    },
+    {
+      "keyword": "장해진단서 비용",
+      "search_intent": "informational",
+      "priority": "medium"
+    },
+    {
+      "keyword": "보훈관서 전화번호",
+      "search_intent": "transactional",
+      "priority": "high"
+    },
+    {
+      "keyword": "상이등급 판정 절차",
+      "search_intent": "informational",
+      "priority": "medium"
+    },
+    {
+      "keyword": "보훈병원 신체검사",
+      "search_intent": "informational",
+      "priority": "medium"
+    },
+    {
+      "keyword": "국가보훈부 장해진단서",
+      "search_intent": "informational",
+      "priority": "medium"
+    },
+    {
+      "keyword": "고엽제 후유증 장해진단서",
+      "search_intent": "informational",
+      "priority": "medium"
+    },
+    {
+      "keyword": "장해진단서 발급기관 확대",
+      "search_intent": "informational",
+      "priority": "medium"
+    }
+  ],
+  "long_tail_keywords": [
+    {
+      "keyword": "장해진단서 발급 병원 전국 140곳",
+      "search_intent": "informational",
+      "priority": "high"
+    },
+    {
+      "keyword": "보훈병원 안 가도 되는 장해진단서",
+      "search_intent": "informational",
+      "priority": "high"
+    },
+    {
+      "keyword": "2026년 장해진단서 발급기관 확대",
+      "search_intent": "informational",
+      "priority": "high"
+    },
+    {
+      "keyword": "집 근처 장해진단서 발급 병원 찾기",
+      "search_intent": "local",
+      "priority": "high"
+    },
+    {
+      "keyword": "국가유공자 상이등급 신체검사 면제",
+      "search_intent": "informational",
+      "priority": "medium"
+    },
+    {
+      "keyword": "보훈 위탁병원 장해진단서 발급",
+      "search_intent": "transactional",
+      "priority": "medium"
+    },
+    {
+      "keyword": "장해진단서 소견서 9종 서식",
+      "search_intent": "informational",
+      "priority": "low"
+    },
+    {
+      "keyword": "장해진단서 전문의 요건",
+      "search_intent": "informational",
+      "priority": "low"
+    },
+    {
+      "keyword": "공무원 재해보상 장해진단서",
+      "search_intent": "informational",
+      "priority": "medium"
+    },
+    {
+      "keyword": "보훈상담전화 1577-0606",
+      "search_intent": "transactional",
+      "priority": "medium"
+    }
+  ],
+  "section_keyword_map": {
+    "hero": [
+      "장해진단서",
+      "장해진단서 발급기관 확대",
+      "보훈 장해진단서",
+      "전국 140곳"
+    ],
+    "before_after": [
+      "보훈병원 신체검사 대체",
+      "보훈병원 안 가도 되는 장해진단서",
+      "집 근처 장해진단서 발급 병원"
+    ],
+    "policy_overview": [
+      "국가유공자 장해진단서",
+      "장해진단서 발급기관 확대",
+      "2026년 장해진단서",
+      "국가보훈부 장해진단서"
+    ],
+    "how_it_works": [
+      "상이등급 판정 절차",
+      "장해진단서 발급 신청",
+      "보훈심사위원회"
+    ],
+    "benefits": [
+      "보훈병원 신체검사 대체",
+      "장해진단서 활용 혜택",
+      "보훈 의료 접근성"
+    ],
+    "hospital_map": [
+      "장해진단서 발급 병원",
+      "보훈 위탁병원",
+      "내 근처 장해진단서 병원"
+    ],
+    "target_audience": [
+      "국가유공자 장해진단서 대상",
+      "고엽제 후유증 장해진단서",
+      "전공상 장해진단서"
+    ],
+    "faq": [
+      "장해진단서 비용",
+      "장해진단서 서식",
+      "보훈관서 전화번호",
+      "보훈상담전화 1577-0606"
+    ],
+    "required_documents": [
+      "장해진단서 소견서 9종",
+      "장해진단서 전문의 요건",
+      "장해진단서 검사항목"
+    ],
+    "cta": [
+      "보훈상담전화 1577-0606",
+      "보훈관서 전화번호",
+      "장해진단서 발급 신청"
+    ]
+  },
+  "local_keywords": {
+    "서울": "서울 장해진단서 발급 병원",
+    "경기": "경기도 장해진단서 발급 병원",
+    "인천": "인천 장해진단서 발급 병원",
+    "강원": "강원도 장해진단서 발급 병원",
+    "충북": "충북 장해진단서 발급 병원",
+    "충남_대전": "대전 충남 장해진단서 발급 병원",
+    "전북": "전북 장해진단서 발급 병원",
+    "전남_광주": "광주 전남 장해진단서 발급 병원",
+    "경북_대구": "대구 경북 장해진단서 발급 병원",
+    "경남_부산_울산": "부산 경남 울산 장해진단서 발급 병원",
+    "제주": "제주 장해진단서 발급 병원"
+  }
+}

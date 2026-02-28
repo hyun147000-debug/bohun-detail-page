@@ -1,0 +1,282 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sections.schema.json",
+  "title": "13-Section Copy Output",
+  "description": "카피라이팅 에이전트의 13섹션 고전환 카피 출력 스키마 (reference.md 기반)",
+  "type": "object",
+  "required": [
+    "section_01_hero",
+    "section_02_pain",
+    "section_03_problem",
+    "section_04_story",
+    "section_05_solution_intro",
+    "section_06_how_it_works",
+    "section_07_social_proof",
+    "section_08_authority",
+    "section_09_benefits_bonus",
+    "section_10_risk_removal",
+    "section_11_before_after_final",
+    "section_12_target_filter",
+    "section_13_final_cta"
+  ],
+  "properties": {
+    "section_01_hero": {
+      "type": "object",
+      "description": "긴급성 헤더 — 3초 안에 관심 캡처",
+      "required": ["headline_options", "subheadline", "cta_text"],
+      "properties": {
+        "headline_options": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "maxItems": 3,
+          "description": "핵심 혜택 + 결과 헤드라인 3가지 옵션"
+        },
+        "subheadline": {
+          "type": "string",
+          "description": "타겟 명시 + 방법 힌트"
+        },
+        "urgency_badge": {
+          "type": ["string", "null"],
+          "description": "한정 요소 (선착순, 기간 등)"
+        },
+        "cta_text": {
+          "type": "string",
+          "description": "행동 유도 버튼 텍스트"
+        }
+      }
+    },
+    "section_02_pain": {
+      "type": "object",
+      "description": "공감 — '이거 내 얘기다' 유발",
+      "required": ["intro", "pain_points", "emotional_hook"],
+      "properties": {
+        "intro": {
+          "type": "string",
+          "description": "공감 질문"
+        },
+        "pain_points": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "maxItems": 4,
+          "description": "구체적 고통 3-4개"
+        },
+        "emotional_hook": {
+          "type": "string",
+          "description": "감정적 마무리"
+        }
+      }
+    },
+    "section_03_problem": {
+      "type": "object",
+      "description": "문제 정의 — 실패 원인 → 기대감",
+      "required": ["hook", "reasons"],
+      "properties": {
+        "hook": {
+          "type": "string",
+          "description": "반전 문구"
+        },
+        "reasons": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "description": "진짜 원인 3개"
+        },
+        "reframe": {
+          "type": ["string", "null"],
+          "description": "관점 전환 문구"
+        }
+      }
+    },
+    "section_04_story": {
+      "type": "object",
+      "description": "Before→After 스토리",
+      "required": ["before", "after"],
+      "properties": {
+        "before": { "type": "string", "description": "과거 상태" },
+        "turning_point": { "type": ["string", "null"], "description": "전환점" },
+        "after": { "type": "string", "description": "변화 후 상태" },
+        "proof": { "type": ["string", "null"], "description": "증거" }
+      }
+    },
+    "section_05_solution_intro": {
+      "type": "object",
+      "description": "솔루션 소개",
+      "required": ["product_name", "one_liner"],
+      "properties": {
+        "intro": { "type": ["string", "null"], "description": "소개 문구" },
+        "product_name": { "type": "string", "description": "제품명" },
+        "one_liner": { "type": "string", "description": "핵심 정의 한 줄" },
+        "target_fit": { "type": ["string", "null"], "description": "타겟 적합성" }
+      }
+    },
+    "section_06_how_it_works": {
+      "type": "object",
+      "description": "작동 방식 — 쉬워 보이게",
+      "required": ["steps"],
+      "properties": {
+        "steps": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": ["number", "title", "description"],
+            "properties": {
+              "number": { "type": "integer" },
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "result": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "section_07_social_proof": {
+      "type": "object",
+      "description": "사회적 증거 — 신뢰도 최대화",
+      "required": ["headline"],
+      "properties": {
+        "headline": { "type": "string" },
+        "stats": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "숫자 증거"
+        },
+        "testimonials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": ["string", "null"] },
+              "quote": { "type": "string" },
+              "result": { "type": ["string", "null"] }
+            },
+            "required": ["name", "quote"]
+          },
+          "description": "실제 후기 3-5개"
+        }
+      }
+    },
+    "section_08_authority": {
+      "type": "object",
+      "description": "권위 — 제작자 신뢰 구축",
+      "properties": {
+        "intro": { "type": ["string", "null"] },
+        "bio": { "type": ["string", "null"], "description": "이력/실적" },
+        "credentials": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "자격/성과"
+        },
+        "message": { "type": ["string", "null"], "description": "진정성 메시지" }
+      }
+    },
+    "section_09_benefits_bonus": {
+      "type": "object",
+      "description": "혜택 + 보너스 — 가치 극대화",
+      "required": ["main_benefits"],
+      "properties": {
+        "main_benefits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "benefit": { "type": "string" },
+              "value": { "type": ["string", "null"] }
+            },
+            "required": ["benefit"]
+          }
+        },
+        "bonus_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item": { "type": "string" },
+              "value": { "type": ["string", "null"] }
+            },
+            "required": ["item"]
+          }
+        },
+        "total_value": { "type": ["string", "null"] }
+      }
+    },
+    "section_10_risk_removal": {
+      "type": "object",
+      "description": "리스크 제거 — 구매 장벽 제거",
+      "properties": {
+        "guarantee": { "type": ["string", "null"], "description": "환불/보장 정책" },
+        "faq": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": { "type": "string" },
+              "answer": { "type": "string" }
+            },
+            "required": ["question", "answer"]
+          },
+          "description": "자주 묻는 질문 3-5개"
+        },
+        "support": { "type": ["string", "null"], "description": "지원 내용" }
+      }
+    },
+    "section_11_before_after_final": {
+      "type": "object",
+      "description": "최종 대비 — 선택 압박",
+      "required": ["without", "with"],
+      "properties": {
+        "without": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "없으면 이렇게"
+        },
+        "with": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "있으면 이렇게"
+        },
+        "question": { "type": ["string", "null"], "description": "선택 질문" }
+      }
+    },
+    "section_12_target_filter": {
+      "type": "object",
+      "description": "타겟 필터 — 적합한 고객만",
+      "required": ["recommended", "not_recommended"],
+      "properties": {
+        "recommended": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "추천 대상"
+        },
+        "not_recommended": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "비추천 대상"
+        }
+      }
+    },
+    "section_13_final_cta": {
+      "type": "object",
+      "description": "최종 CTA — 행동 유도",
+      "required": ["headline", "cta_button"],
+      "properties": {
+        "headline": { "type": "string", "description": "마지막 헤드라인" },
+        "urgency": { "type": ["string", "null"], "description": "긴급성 재강조" },
+        "price": {
+          "type": "object",
+          "properties": {
+            "original": { "type": ["string", "null"] },
+            "sale": { "type": ["string", "null"] },
+            "savings": { "type": ["string", "null"] }
+          }
+        },
+        "cta_button": { "type": "string", "description": "CTA 버튼 텍스트" },
+        "closing": { "type": ["string", "null"], "description": "마무리 문구" }
+      }
+    }
+  }
+}

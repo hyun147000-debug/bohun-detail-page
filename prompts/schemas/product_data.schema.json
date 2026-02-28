@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "product_data.schema.json",
+  "title": "Product Data",
+  "description": "정보수집 에이전트(collector)의 출력 스키마",
+  "type": "object",
+  "required": ["product_name", "category", "brand", "pricing", "specs", "collected_at"],
+  "properties": {
+    "product_name": {
+      "type": "string",
+      "description": "상품 정식 명칭"
+    },
+    "product_name_short": {
+      "type": ["string", "null"],
+      "description": "상품 약칭"
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "main": { "type": "string" },
+        "sub": { "type": "string" },
+        "detail": { "type": ["string", "null"] }
+      },
+      "required": ["main", "sub"]
+    },
+    "brand": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "story": { "type": ["string", "null"] },
+        "target_audience": { "type": ["string", "null"] },
+        "tone": { "type": ["string", "null"] }
+      },
+      "required": ["name"]
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "original": { "type": ["number", "null"] },
+        "sale": { "type": ["number", "null"] },
+        "currency": { "type": "string", "default": "KRW" },
+        "bundle_options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "price": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "specs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": "string" }
+        },
+        "required": ["label", "value"]
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "certifications": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "images": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "videos": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "reviews_summary": {
+      "type": ["string", "null"]
+    },
+    "competitors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "price": { "type": ["number", "null"] }
+        }
+      }
+    },
+    "raw_description": {
+      "type": ["string", "null"]
+    },
+    "_missing_fields": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "수집하지 못한 필드 목록"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

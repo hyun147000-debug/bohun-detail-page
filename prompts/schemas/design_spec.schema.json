@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "design_spec.schema.json",
+  "title": "Design Specification",
+  "description": "디자인 에이전트(designer)의 출력 스키마",
+  "type": "object",
+  "required": ["canvas_width", "mobile_width", "color_system", "typography", "sections"],
+  "properties": {
+    "canvas_width": {
+      "type": "integer",
+      "default": 860,
+      "description": "PC 기준 캔버스 너비 (px)"
+    },
+    "mobile_width": {
+      "type": "integer",
+      "default": 375,
+      "description": "모바일 기준 너비 (px)"
+    },
+    "color_system": {
+      "type": "object",
+      "required": ["primary", "accent", "background", "text_primary"],
+      "properties": {
+        "primary": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "secondary": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "accent": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "background": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "text_primary": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "text_secondary": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "properties": {
+        "headline_font": { "type": "string", "default": "Pretendard" },
+        "body_font": { "type": "string", "default": "Pretendard" },
+        "sizes": {
+          "type": "object",
+          "properties": {
+            "h1": { "type": "string" },
+            "h2": { "type": "string" },
+            "h3": { "type": "string" },
+            "body": { "type": "string" },
+            "caption": { "type": "string" }
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["section_id", "section_name", "layout_type"],
+        "properties": {
+          "section_id": { "type": "integer" },
+          "section_name": { "type": "string" },
+          "height_estimate": { "type": "string" },
+          "layout_type": {
+            "type": "string",
+            "enum": ["full-bleed", "centered", "split", "card-grid", "carousel", "accordion"]
+          },
+          "background": {
+            "type": "string",
+            "enum": ["image", "color", "gradient", "transparent"]
+          },
+          "background_value": { "type": "string" }
+        }
+      }
+    },
+    "total_estimated_height": {
+      "type": "string",
+      "description": "전체 페이지 예상 높이"
+    }
+  }
+}

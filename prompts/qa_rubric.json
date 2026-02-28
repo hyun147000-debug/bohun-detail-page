@@ -1,0 +1,157 @@
+{
+  "version": "1.0",
+  "description": "상세페이지 에이전트 팀 품질 평가 기준표",
+  "collector": {
+    "criteria": [
+      {
+        "name": "필수필드완성도",
+        "description": "required 필드 중 null이 아닌 비율",
+        "weight": 0.4,
+        "threshold": 0.8,
+        "check": "count(non_null_required_fields) / count(required_fields) >= 0.8"
+      },
+      {
+        "name": "이미지수집량",
+        "description": "수집된 이미지 URL 개수",
+        "weight": 0.2,
+        "threshold": 5,
+        "check": "len(images) >= 5"
+      },
+      {
+        "name": "스펙완성도",
+        "description": "스펙 항목 개수",
+        "weight": 0.2,
+        "threshold": 3,
+        "check": "len(specs) >= 3"
+      },
+      {
+        "name": "경쟁사수집",
+        "description": "경쟁 상품 수집 개수",
+        "weight": 0.2,
+        "threshold": 2,
+        "check": "len(competitors) >= 2"
+      }
+    ],
+    "pass_score": 0.7
+  },
+  "researcher": {
+    "criteria": [
+      {
+        "name": "리포트구조완성도",
+        "description": "필수 섹션(요약/시장/경쟁사/페르소나/USP/키워드) 포함 여부",
+        "weight": 0.3,
+        "threshold": 1.0,
+        "check": "all required sections present in research_report.md"
+      },
+      {
+        "name": "키워드개수",
+        "description": "메인 키워드 3개 이상, 서브 키워드 10개 이상",
+        "weight": 0.25,
+        "threshold": 1.0,
+        "check": "len(main_keywords) >= 3 and len(sub_keywords) >= 10"
+      },
+      {
+        "name": "페르소나구체성",
+        "description": "페르소나에 인구통계+심리+행동 모두 포함",
+        "weight": 0.25,
+        "threshold": 1.0,
+        "check": "each persona has demographics, psychographics, behavior"
+      },
+      {
+        "name": "데이터근거",
+        "description": "수치/출처가 포함된 인사이트 비율",
+        "weight": 0.2,
+        "threshold": 0.6,
+        "check": "insights_with_data / total_insights >= 0.6"
+      }
+    ],
+    "pass_score": 0.7
+  },
+  "copywriter": {
+    "criteria": [
+      {
+        "name": "섹션완성도",
+        "description": "필수 8개 섹션 모두 포함",
+        "weight": 0.2,
+        "threshold": 1.0,
+        "check": "len(sections) >= 8"
+      },
+      {
+        "name": "헤드라인길이",
+        "description": "히어로 헤드라인 15자 이내",
+        "weight": 0.1,
+        "threshold": 1.0,
+        "check": "len(hero.headline) <= 15"
+      },
+      {
+        "name": "Feature-Benefit전환",
+        "description": "특장점 섹션에 Benefit이 명시된 비율",
+        "weight": 0.2,
+        "threshold": 1.0,
+        "check": "all feature sections contain benefit description"
+      },
+      {
+        "name": "SEO키워드반영",
+        "description": "메인 키워드가 카피에 포함된 비율",
+        "weight": 0.2,
+        "threshold": 0.8,
+        "check": "main_keywords_found_in_copy / total_main_keywords >= 0.8"
+      },
+      {
+        "name": "CTA명확성",
+        "description": "CTA 섹션에 구체적 행동 유도 문구 포함",
+        "weight": 0.15,
+        "threshold": 1.0,
+        "check": "cta section has cta_text and it's actionable"
+      },
+      {
+        "name": "톤일관성",
+        "description": "전체 섹션에서 톤앤매너 일관성",
+        "weight": 0.15,
+        "threshold": 0.8,
+        "check": "tone consistency score across sections >= 0.8"
+      }
+    ],
+    "pass_score": 0.75
+  },
+  "designer": {
+    "criteria": [
+      {
+        "name": "모바일호환성",
+        "description": "375px 기준 렌더링 정상 여부",
+        "weight": 0.3,
+        "threshold": 1.0,
+        "check": "no horizontal overflow at 375px viewport"
+      },
+      {
+        "name": "섹션매핑",
+        "description": "카피 섹션과 디자인 섹션 1:1 매핑",
+        "weight": 0.25,
+        "threshold": 1.0,
+        "check": "all copy sections have corresponding design sections"
+      },
+      {
+        "name": "컬러시스템",
+        "description": "색상 대비 비율 WCAG AA 충족",
+        "weight": 0.2,
+        "threshold": 1.0,
+        "check": "text/background contrast ratio >= 4.5:1"
+      },
+      {
+        "name": "시각적계층",
+        "description": "헤드라인 > 서브헤드 > 본문 크기 순서",
+        "weight": 0.15,
+        "threshold": 1.0,
+        "check": "h1 > h2 > h3 > body font sizes"
+      },
+      {
+        "name": "HTML유효성",
+        "description": "시맨틱 태그 사용, 유효한 HTML",
+        "weight": 0.1,
+        "threshold": 1.0,
+        "check": "valid HTML5 structure"
+      }
+    ],
+    "pass_score": 0.8
+  }
+}

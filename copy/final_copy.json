@@ -1,0 +1,250 @@
+{
+  "policy_name": "국가보훈 장해진단서 발급기관 확대",
+  "created_at": "2026-02-28",
+  "version": "final_v1",
+
+  "section_01_hero": {
+    "headline_options": [
+      "이제 집 근처 병원에서 장해진단서를 받으세요 - 전국 140곳으로 확대",
+      "보훈병원까지 먼 길, 더 이상 가지 않아도 됩니다",
+      "장해진단서 발급기관 49곳에서 140곳으로 - 2026년 1월부터 시행"
+    ],
+    "subheadline": "국가보훈부가 보훈대상자의 편의를 위해 장해진단서 발급 의료기관을 대폭 확대했습니다. 가까운 종합병원에서 편하게 발급받으세요.",
+    "policy_badge": "2026년 1월 시행",
+    "authority_mark": "국가보훈부",
+    "cta_text": "내 근처 발급병원 찾기",
+    "image_prompt": "A warm, hopeful wide-format illustration in Korean government official poster style. Scene: A smiling elderly Korean male veteran (gray hair, neat casual clothing) walks toward a bright, modern local general hospital entrance on a sunny spring morning. His adult daughter gently supports his arm. Cherry blossom petals drift in soft morning sunlight. The hospital sign reads clear Korean text. Subtle Korean national flag (Taegeukgi) motif integrated into the upper corner as a translucent overlay. Color palette: government blue (#003478) for header bar and accents, warm red (#C8102E) for the national emblem detail. Large bold overlay text '140' in white with a soft glow. Clean, friendly vector illustration style with soft gradients — not photorealistic. Aspect ratio 16:9. Bright, trustworthy, and welcoming atmosphere."
+  },
+
+  "section_02_before_after": {
+    "before_title": "기존",
+    "before_items": [
+      "전국 5개 보훈병원에서만 신체검사 가능",
+      "서울, 부산, 대전, 대구, 광주까지 장거리 이동 필요",
+      "예약 대기, 반복 방문의 부담",
+      "장해진단서 발급기관도 상급종합병원 등 49곳에 한정"
+    ],
+    "after_title": "2026년 1월부터",
+    "after_items": [
+      "전국 140곳에서 장해진단서 발급 가능",
+      "집 근처 가까운 종합병원(위탁병원)에서 편리하게 발급",
+      "장해진단서 제출 시 보훈병원 신체검사 생략 가능",
+      "보훈심사위원회에서 바로 상이등급 심사 진행"
+    ],
+    "highlight": "발급기관 약 2.9배 확대 - 49곳에서 140곳으로",
+    "image_prompt_before": "Left panel of a diptych illustration. An elderly Korean man in his 70s, wearing a warm padded jacket, leaning on a wooden cane, stands alone at a rural bus terminal on a gray, drizzly day. Behind him, a simplified map of South Korea shows a long winding red dotted route stretching from a small rural village icon to a distant large hospital icon labeled in Korean. His expression is tired and worried. Muted gray-blue color palette. Puddles on the ground reflect dim light. Cold, exhausting atmosphere. Flat illustration style with subtle texture. Aspect ratio 4:5.",
+    "image_prompt_after": "Right panel of a diptych illustration (paired with 'before'). The same elderly Korean man, now smiling warmly, walks through the entrance of a clean, modern neighborhood general hospital just a short distance from his home. His adult son walks beside him carrying a small folder. On a simplified map overlay, a very short green path connects his home icon to the nearby hospital. Bright spring day with cherry blossoms and sunshine. Vibrant warm color palette — soft greens, sky blue, cherry-blossom pink. Hopeful, relieved, comfortable atmosphere. Flat illustration style with subtle texture. Aspect ratio 4:5."
+  },
+
+  "section_03_policy_overview": {
+    "intro": "장해진단서를 활용하면 보훈심사 절차가 훨씬 간편해집니다.",
+    "legal_basis": "개정 국가유공자 등 예우 및 지원에 관한 법률 (2023.6.17. 시행), 국가유공자법 시행규칙 (2025.12.16. 개정), 국가유공자법 시행령 (2026.1.6. 대통령령 제36036호)",
+    "what_is_it": "국가보훈 장해진단서는 보훈병원 신체검사를 대체할 수 있는 공식 진단문서입니다. 본인이 희망하면 이 진단서를 제출하여 보훈병원에 가지 않고도 보훈심사위원회에서 바로 상이등급 심사를 받을 수 있습니다.",
+    "key_changes": {
+      "before": "발급 가능 의료기관 49곳 (상급종합병원 47 + 국군수도병원 1 + 경찰병원 1)",
+      "after": "발급 가능 의료기관 140곳 (상급종합병원 47 + 보훈병원 5 + 위탁병원 86 + 국군수도병원 1 + 경찰병원 1)",
+      "expansion_rate": "약 2.9배 확대"
+    },
+    "institution_breakdown": [
+      {"type": "상급종합병원", "count": 47, "note": "기존 유지"},
+      {"type": "보훈병원", "count": 5, "note": "신규 추가 - 중앙보훈병원, 대전, 광주, 대구, 부산 보훈병원"},
+      {"type": "종합병원급 위탁병원", "count": 86, "note": "신규 추가 - 국가보훈부 장관이 지정한 위탁 종합병원"},
+      {"type": "국군수도병원", "count": 1, "note": "기존 유지"},
+      {"type": "경찰병원", "count": 1, "note": "기존 유지"}
+    ],
+    "image_prompt": "A professional infographic on a clean white background. Center focus: the number '49' in small gray text with a strikethrough, transitioning via a bold upward-curving blue arrow to the number '140' rendered large and bold in government blue (#003478) with a subtle golden glow effect. Below the numbers: a clean donut chart breaking down the 140 institutions — blue segment (47 tertiary hospitals), red segment (#C8102E, 5 veterans hospitals), green segment (86 commissioned hospitals), small gray segment (2 public institutions: Armed Forces Capital Hospital and Police Hospital). Each segment has a small icon (hospital building, red cross, handshake, shield). Percentage labels on each segment. Bottom: a thin horizontal bar showing the timeline '49 (before) -> 140 (2026.1~)'. Flat design, government report aesthetic. Aspect ratio 16:9."
+  },
+
+  "section_04_how_it_works": {
+    "headline": "장해진단서, 이렇게 이용하세요",
+    "steps": [
+      {
+        "number": 1,
+        "title": "대상 여부 확인",
+        "description": "관할 보훈관서에 전화(1577-0606)하여 본인이 장해진단서 발급 대상인지 확인합니다.",
+        "tip": "공무 관련성을 인정받은 상이부위와 질병에 대해서만 진단 가능합니다.",
+        "icon": "phone"
+      },
+      {
+        "number": 2,
+        "title": "가까운 발급병원 방문",
+        "description": "전국 140곳 발급 의료기관 중 가까운 병원을 방문하여 해당 분야 전문의에게 장해진단서를 발급받습니다.",
+        "tip": "방문 전 유선으로 해당 진료과목 진단 가능 여부를 반드시 확인하세요.",
+        "icon": "hospital"
+      },
+      {
+        "number": 3,
+        "title": "보훈심사위원회 심사",
+        "description": "장해진단서와 소견서, 검사결과지, 의무기록을 종합 검토하여 보훈심사위원회에서 최종 상이등급을 심사합니다.",
+        "tip": "보훈병원 신체검사를 생략할 수 있습니다.",
+        "icon": "document_check"
+      }
+    ],
+    "pass_badge": "신체검사 PASS - 보훈병원 방문 없이 바로 심사 가능",
+    "image_prompt": "A horizontal 3-step process flowchart on a deep navy blue background (#003478). Each step is a rounded rectangle card with a white fill and subtle drop shadow. Step 1: A friendly teal phone handset icon above, bold Korean title '1단계: 대상 확인', subtitle 'Call 1577-0606'. Step 2: A clean hospital building icon with a green cross above, bold title '2단계: 병원 방문', subtitle 'Visit nearby hospital (140 locations)'. Step 3: A document icon with a large golden checkmark stamp reading 'PASS' above, bold title '3단계: 심사', subtitle 'Veterans Board review'. Steps connected by smooth white gradient arrows. Each card has a thin colored top border (Step 1: teal, Step 2: green, Step 3: gold). Below Step 3, a highlight badge in red (#C8102E) reads '신체검사 PASS'. Professional Korean government infographic style. Flat design with minimal gradients. Aspect ratio 16:9."
+  },
+
+  "section_05_benefits": {
+    "headline": "이렇게 좋아집니다",
+    "benefits": [
+      {
+        "icon": "location_near",
+        "title": "집 근처에서 편리하게",
+        "description": "전국 140곳 발급기관으로 확대되었습니다. 먼 보훈병원까지 가지 않아도 됩니다."
+      },
+      {
+        "icon": "time_save",
+        "title": "시간과 비용 절약",
+        "description": "장거리 이동 시간, 교통비, 숙박비 부담이 크게 줄어듭니다."
+      },
+      {
+        "icon": "fast_process",
+        "title": "심사 기간 단축",
+        "description": "보훈병원 신체검사 단계를 생략하여 국가유공자 등록 소요기간이 단축됩니다."
+      },
+      {
+        "icon": "nationwide",
+        "title": "전국 어디서나",
+        "description": "서울부터 제주까지, 전국 모든 권역에 발급기관이 배치되어 있습니다."
+      },
+      {
+        "icon": "fair_review",
+        "title": "동일한 심사 품질",
+        "description": "어디서 발급받든 보훈심사위원회의 최종 등급심사는 동일하게 진행됩니다."
+      }
+    ],
+    "image_prompt": "Five circular flat-design benefit icons arranged in a horizontal row on a white background with subtle gray grid lines. Each icon is inside a circle with a light blue (#E8F0FE) fill and a thin blue (#003478) border. (1) A small house with a hospital building very close by, connected by a short green dotted path — representing proximity. (2) A clock face with fast-forward arrows and a checkmark — representing time savings. (3) A stack of documents being simplified into a single sheet with a green arrow — representing streamlined process. (4) An outline map of South Korea with multiple green location pins spread across all regions — representing nationwide coverage. (5) A balanced scale with equal golden weights on both sides — representing fair review quality. All icons use a consistent blue (#003478) monochrome palette with green (#2E7D32) accents for positive elements. Clean, modern Korean government infographic style. No text inside icons. Aspect ratio 16:9."
+  },
+
+  "section_06_hospital_map": {
+    "headline": "전국 어디서나, 가까운 병원에서",
+    "total_count": "전국 140곳",
+    "hospital_categories": [
+      {"type": "상급종합병원", "count": 47, "color": "blue", "description": "대학병원급 대형 의료기관"},
+      {"type": "보훈병원", "count": 5, "color": "red", "description": "중앙보훈병원, 대전, 광주, 대구, 부산 보훈병원"},
+      {"type": "종합병원급 위탁병원", "count": 86, "color": "green", "description": "국가보훈부 장관이 지정한 위탁 종합병원"},
+      {"type": "공공의료기관", "count": 2, "color": "gray", "description": "국군수도병원, 경찰병원"}
+    ],
+    "regional_stats": {
+      "서울": "16곳 (상급종합 14 + 보훈 1 + 위탁 1 + 공공 1 중 경찰병원)",
+      "경기/인천": "36곳 (상급종합 9 + 위탁 26 + 공공 1 중 국군수도병원)",
+      "강원": "10곳 (상급종합 2 + 위탁 8)",
+      "충청/대전": "17곳 (상급종합 4 + 보훈 1 + 위탁 12)",
+      "전라/광주": "22곳 (상급종합 5 + 보훈 1 + 위탁 16)",
+      "경상/대구/부산/울산": "33곳 (상급종합 13 + 보훈 2 + 위탁 20)",
+      "제주": "3곳 (위탁 3)"
+    },
+    "search_guide": "각 병원마다 발급이 불가한 진료과목이 있을 수 있으므로, 방문 전 반드시 유선으로 확인하세요.",
+    "image_prompt": "A detailed vector map of South Korea viewed from slightly above, showing all major provinces and cities. 140 location pins are placed across the map: blue pins (#003478) for 47 tertiary hospitals concentrated in major cities, red pins (#C8102E) for 5 veterans hospitals (Seoul, Daejeon, Gwangju, Daegu, Busan — each labeled), green pins (#2E7D32) for 86 commissioned hospitals spread widely including rural areas, and 2 small gray pins for public institutions. An inset zoom box in the upper-right shows the dense Seoul metropolitan area in detail. A clean legend/key at the bottom-right lists pin colors with hospital type names and counts. Regional count labels float near each province (e.g., 'Seoul 16', 'Gyeonggi/Incheon 36', 'Jeju 3'). Soft topographic texture on the map. White background. Professional cartographic infographic style. Aspect ratio 3:4 (portrait, suitable for scrolling)."
+  },
+
+  "section_07_target_audience": {
+    "headline": "누가 이용할 수 있나요?",
+    "eligible": {
+      "title": "이용 가능 대상",
+      "items": [
+        "전상/공상: 보훈심사위원회에서 공무 관련성(인과관계)을 인정받은 부상 또는 질병",
+        "고엽제후유증: 고엽제 검진에서 인정받은 고엽제후유증 질병"
+      ]
+    },
+    "not_eligible": {
+      "title": "이용 불가 대상",
+      "items": [
+        "고엽제후유의증",
+        "고엽제후유증 2세 환자",
+        "생활능력이 없는 정도의 장애판정"
+      ]
+    },
+    "important_note": "반드시 관할 보훈관서(1577-0606)에 전화하여 본인이 대상자인지 먼저 확인한 후 병원을 방문하세요.",
+    "choice_note": "장해진단서는 본인 선택 사항입니다. 원하지 않으시면 기존처럼 보훈병원에서 신체검사를 받으실 수 있습니다.",
+    "image_prompt": "A clean two-panel card infographic on a light gray (#F5F5F5) background. Left panel: White card with a thick green (#2E7D32) left border and a large green circle checkmark icon at the top. Title 'Eligible' in bold. Below: two bullet points with green dot markers and concise Korean text for each eligible category. Right panel: White card with a thick gray (#9E9E9E) left border and a large gray circle X-mark icon at the top. Title 'Not Eligible' in bold. Below: three bullet points with gray dot markers and concise Korean text for each ineligible category. At the bottom spanning both panels: a warm yellow (#FFF8E1) info box with rounded corners, containing a blue phone handset icon and the text '1577-0606' in large bold navy blue (#003478), with the subtitle 'Please confirm your eligibility first'. Clean government document style. Flat design. Aspect ratio 16:9."
+  },
+
+  "section_08_faq": {
+    "headline": "자주 묻는 질문",
+    "faq": [
+      {
+        "question": "장해진단서 발급 비용은 누가 부담하나요?",
+        "answer": "신청인 본인 부담 원칙입니다. 각 병원의 진료비 기준에 따라 비용이 달라질 수 있으니, 방문 전 해당 병원에 문의하시기 바랍니다."
+      },
+      {
+        "question": "모든 병원에서 모든 종류의 장해진단이 가능한가요?",
+        "answer": "아닙니다. 각 병원마다 발급이 불가한 진료과목이 있을 수 있습니다. 반드시 방문 전에 유선으로 해당 진료과목의 진단 가능 여부를 확인하세요."
+      },
+      {
+        "question": "장해진단서를 제출하면 보훈병원 신체검사를 안 받아도 되나요?",
+        "answer": "네, 장해진단서를 제출하면 보훈병원 신체검사를 생략하고 보훈심사위원회에서 바로 상이등급을 심사받을 수 있습니다."
+      },
+      {
+        "question": "장해진단서는 어떤 서류로 구성되나요?",
+        "answer": "진단서 1종과 신체부위별/질병별 소견서 9종으로 구성된 법정서식입니다. 해당 분야 전문의가 직접 대면 진단하여 작성합니다."
+      },
+      {
+        "question": "장해진단서를 제출한 후에도 추가 검사가 필요할 수 있나요?",
+        "answer": "네, 보훈심사위원회에서 최종 등급을 판정하기 위한 기초자료이므로, 보완자료나 추가검사가 필요할 수 있습니다."
+      },
+      {
+        "question": "장해진단서 제도는 반드시 이용해야 하나요?",
+        "answer": "아닙니다. 본인 선택 사항입니다. 원하지 않으시면 기존처럼 보훈병원에서 신체검사를 받으실 수 있습니다."
+      },
+      {
+        "question": "관할 보훈관서는 어떻게 확인하나요?",
+        "answer": "보훈상담전화 1577-0606으로 전화하시거나, 국가보훈부 홈페이지(www.mpva.go.kr)에서 확인하실 수 있습니다."
+      }
+    ],
+    "image_prompt": "A clean, minimal FAQ section header illustration. A large stylized question mark in government blue (#003478) with a subtle light blue glow, paired with a friendly exclamation mark in warm red (#C8102E). Both characters have rounded, approachable forms. Surrounding them: small floating speech bubble icons in various sizes, light gray with blue outlines, suggesting conversation and questions being answered. Background: very light gray (#FAFAFA) with a subtle dot grid pattern. Below the main icons: a row of 7 small numbered circle badges (Q1 through Q7) in alternating blue and light blue. Professional, trustworthy, approachable design. Flat illustration style. Aspect ratio 16:9."
+  },
+
+  "section_09_required_documents": {
+    "headline": "장해진단서 발급 시 알아두세요",
+    "form_info": {
+      "title": "서식 구성",
+      "description": "국가유공자법 시행규칙 등 보훈관계법령에서 규정한 법정서식",
+      "items": ["진단서 1종", "신체부위별/질병별 소견서 9종"]
+    },
+    "specialist_summary": [
+      {"부위": "눈의 장애", "전문의": "안과 전문의"},
+      {"부위": "귀의 장애", "전문의": "이비인후과 전문의"},
+      {"부위": "코의 장애", "전문의": "이비인후과, 피부과, 성형외과 전문의"},
+      {"부위": "입의 장애", "전문의": "치과의사 전문의 / 재활의학과, 이비인후과, 정신건강의학과, 신경과 전문의"},
+      {"부위": "흉터의 장애", "전문의": "피부과, 성형외과, 외과 전문의"},
+      {"부위": "신경계통/정신장애", "전문의": "신경외과, 신경과, 재활의학과, 정신건강의학과 전문의"},
+      {"부위": "흉복부 장기", "전문의": "내과(각 분과), 흉부외과, 비뇨의학과 전문의"},
+      {"부위": "체간의 장애", "전문의": "신경외과, 정형외과, 재활의학과 전문의"},
+      {"부위": "팔/다리 장애", "전문의": "정형외과, 재활의학과 전문의"}
+    ],
+    "cautions": [
+      "장해소견은 객관적 검사결과에 근거하여 현재 남아있는 장해상태를 구체적으로 기재해야 합니다.",
+      "의학적 소견 없이 환자가 호소하는 증상만으로 기재해서는 안 됩니다.",
+      "예상등급이나 상이등급기준에 해당하는 문구를 직접적으로 기재해서는 안 됩니다.",
+      "보완자료나 추가검사가 필요할 수 있습니다."
+    ],
+    "image_prompt": "A professional medical-document themed illustration on a clean white background. Center: a detailed clipboard with a silver clip at the top, holding a neatly organized stack of papers — the top sheet shows '진단서' (Diagnosis Certificate) in bold Korean text with official-looking form fields and a red official stamp. Behind it, 9 additional form sheets fan out slightly, each with a small tab label for different body parts (eye, ear, nose, etc.). To the left of the clipboard: a navy blue stethoscope draped naturally. To the right: a professional fountain pen and a pair of modern reading glasses. Small body-part icons (eye, ear, spine, limb) float around the edges as subtle decorative elements in light blue. Color palette: predominantly white and blue (#003478) with red (#C8102E) accent on the official stamp. Clean, professional medical illustration style. Aspect ratio 4:3."
+  },
+
+  "section_10_cta": {
+    "headline": "지금 바로 확인하세요",
+    "action_steps": [
+      {
+        "step": 1,
+        "text": "보훈상담전화 1577-0606에 전화하여 대상 여부를 확인하세요."
+      },
+      {
+        "step": 2,
+        "text": "가까운 발급병원을 찾아 방문 전 유선으로 진료과목을 확인하세요."
+      },
+      {
+        "step": 3,
+        "text": "장해진단서를 발급받아 보훈심사위원회에 제출하세요."
+      }
+    ],
+    "contact_info": {
+      "phone": "1577-0606",
+      "phone_label": "보훈상담전화",
+      "website": "www.mpva.go.kr",
+      "website_label": "국가보훈부 홈페이지"
+    },
+    "closing": "대한민국이 당신의 헌신에 보답합니다. 더 가까이, 더 편리하게 - 국가보훈부가 함께합니다.",
+    "image_prompt": "A wide-format inspirational closing banner. Background: a rich gradient transitioning from deep government blue (#003478) on the left to warm patriotic red (#C8102E) on the right, with a soft golden light source emanating from the center-top suggesting a sunrise/dawn of new beginning. Center-left: a large, clean white telephone handset icon with subtle glow, beside the number '1577-0606' rendered in bold white sans-serif font (very large, highly legible). Center-right: a simplified white globe/web icon beside 'www.mpva.go.kr' in white text. Bottom-center: delicate white line-art illustration of Mugunghwa (Korean national flower, Rose of Sharon) with 3-4 blooms and leaves, arranged symmetrically. Top-right corner: subtle translucent Taegeukgi (Korean flag) overlay at 15% opacity. A thin white horizontal line separates the upper content from a bottom bar containing '국가보훈부' in crisp white Korean text. Overall mood: dignified, warm, hopeful, official. No photographic elements — all vector/flat illustration. Aspect ratio 16:9."
+  }
+}

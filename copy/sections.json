@@ -1,0 +1,98 @@
+{
+  "policy_name": "국가보훈 장해진단서 발급기관 확대",
+  "created_at": "2026-02-28",
+  "total_sections": 10,
+  "section_structure": "정부 정책 홍보 특성에 맞게 기존 13섹션에서 10섹션으로 조정",
+  "sections": [
+    {
+      "id": "01",
+      "name": "Hero",
+      "name_kr": "정책 헤더",
+      "purpose": "핵심 변화를 한눈에 전달 + 공식 신뢰감 확보",
+      "key_elements": ["headline", "subheadline", "policy_badge", "authority_mark", "cta"],
+      "image_required": true,
+      "image_type": "메인 비주얼 배너 (태극기 모티프 + 병원 + 보훈대상자)"
+    },
+    {
+      "id": "02",
+      "name": "Before/After",
+      "name_kr": "변화 대비",
+      "purpose": "기존 불편 vs 변경 후 편리함 극적 대비",
+      "key_elements": ["before_items", "after_items", "highlight"],
+      "image_required": true,
+      "image_type": "비교 일러스트 (먼 보훈병원 vs 가까운 동네 병원)"
+    },
+    {
+      "id": "03",
+      "name": "Policy Overview",
+      "name_kr": "정책 소개",
+      "purpose": "제도를 명확하고 쉽게 설명 + 법적 근거",
+      "key_elements": ["intro", "legal_basis", "key_changes", "institution_breakdown"],
+      "image_required": true,
+      "image_type": "인포그래픽 (49→140 확대 비주얼 + 기관분류 다이어그램)"
+    },
+    {
+      "id": "04",
+      "name": "How It Works",
+      "name_kr": "이용 절차",
+      "purpose": "3단계 신청/발급/심사 절차를 쉽고 명확하게",
+      "key_elements": ["step_1_confirm", "step_2_visit", "step_3_review", "important_note"],
+      "image_required": true,
+      "image_type": "3단계 플로우차트 다이어그램 + 단계별 일러스트"
+    },
+    {
+      "id": "05",
+      "name": "Benefits",
+      "name_kr": "핵심 혜택",
+      "purpose": "제도 활용의 구체적 이점을 체감시키기",
+      "key_elements": ["headline", "benefits_list", "comparison_infographic"],
+      "image_required": true,
+      "image_type": "혜택 아이콘 세트 + 기존 vs 변경 비교 인포그래픽"
+    },
+    {
+      "id": "06",
+      "name": "Hospital Map",
+      "name_kr": "발급기관 안내",
+      "purpose": "전국 140곳 병원을 한눈에 확인",
+      "key_elements": ["headline", "stats", "hospital_categories", "regional_list", "search_guide"],
+      "image_required": true,
+      "image_type": "전국 지도 인포그래픽 (140곳 핀 표시) + 권역별 통계"
+    },
+    {
+      "id": "07",
+      "name": "Target Audience",
+      "name_kr": "대상자 안내",
+      "purpose": "이용 가능/불가 대상 명확 구분",
+      "key_elements": ["eligible", "not_eligible", "important_note", "choice_note"],
+      "image_required": true,
+      "image_type": "대상자 구분 인포그래픽 (체크마크/X마크)"
+    },
+    {
+      "id": "08",
+      "name": "FAQ",
+      "name_kr": "자주 묻는 질문",
+      "purpose": "실제 궁금증 해소 + 행동 장벽 제거",
+      "key_elements": ["faq_list_5to7"],
+      "image_required": false,
+      "image_type": "Q&A 아이콘"
+    },
+    {
+      "id": "09",
+      "name": "Required Documents",
+      "name_kr": "필요서류/검사항목",
+      "purpose": "병원 방문 전 준비사항 실무 안내",
+      "key_elements": ["form_info", "specialist_table", "exam_items_summary", "cautions"],
+      "image_required": true,
+      "image_type": "서류 체크리스트 + 전문의 분류표"
+    },
+    {
+      "id": "10",
+      "name": "CTA",
+      "name_kr": "행동 유도",
+      "purpose": "즉시 행동 유도 (보훈관서 확인 + 병원 방문)",
+      "key_elements": ["headline", "action_steps", "contact_info", "website", "closing"],
+      "image_required": true,
+      "image_type": "CTA 배너 (1577-0606 전화번호 강조) + 마무리 비주얼"
+    }
+  ]
+}

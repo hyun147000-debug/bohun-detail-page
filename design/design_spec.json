@@ -1,0 +1,212 @@
+{
+  "canvas_width": 860,
+  "mobile_width": 375,
+  "color_system": {
+    "primary": "#003478",
+    "secondary": "#C8102E",
+    "accent": "#1B3A5C",
+    "background_light": "#F5F7FA",
+    "background_dark": "#003478",
+    "text_primary": "#1A1A2E",
+    "text_secondary": "#4A5568",
+    "text_inverse": "#FFFFFF",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "info": "#3B82F6",
+    "government_blue": "#003478",
+    "government_red": "#C8102E"
+  },
+  "typography": {
+    "headline_font": "Pretendard",
+    "body_font": "Pretendard",
+    "fallback": "Noto Sans KR, -apple-system, BlinkMacSystemFont, sans-serif",
+    "cdn": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css",
+    "sizes": {
+      "h1": "36px",
+      "h2": "28px",
+      "h3": "22px",
+      "body": "17px",
+      "small": "15px",
+      "caption": "13px"
+    },
+    "weights": {
+      "black": 900,
+      "extrabold": 800,
+      "bold": 700,
+      "semibold": 600,
+      "regular": 400
+    },
+    "line_heights": {
+      "headline": 1.3,
+      "subhead": 1.45,
+      "body": 1.8
+    }
+  },
+  "layout": {
+    "mobile_padding": "0 24px",
+    "section_padding_mobile": "64px 0",
+    "touch_target_min": "48px",
+    "border_radius": {
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "pill": "100px"
+    },
+    "breakpoints": {
+      "tablet": "640px",
+      "desktop": "768px"
+    }
+  },
+  "sections": [
+    {
+      "id": "01",
+      "name": "Hero",
+      "anchor": "#hero",
+      "height_estimate": "100vh (최소 600px)",
+      "layout_type": "full-bleed, flex-column, center-aligned",
+      "background": "linear-gradient(160deg, #003478 0%, #1B3A5C 50%, #003478 100%)",
+      "text_color": "#FFFFFF",
+      "key_elements": ["policy_badge", "headline", "subhead", "authority_mark", "hero_image_placeholder", "cta_button"],
+      "image_prompt": "A warm, hopeful illustration of a Korean elderly veteran walking into a modern local hospital with family. Korean flag motif subtly in background. Government blue (#003478) and red (#C8102E) color accents. Clean, modern Korean government poster style. 16:9 ratio. Bright morning sunlight."
+    },
+    {
+      "id": "02",
+      "name": "Before/After",
+      "anchor": "#beforeafter",
+      "height_estimate": "560px",
+      "layout_type": "2-column-contrast (mobile: vertical)",
+      "background": "#F5F7FA",
+      "text_color": "#1A1A2E",
+      "key_elements": ["before_column_gray", "arrow_divider", "after_column_blue", "highlight_box"],
+      "image_prompt_before": "Illustration of an elderly Korean man looking tired, standing at a distant large hospital (veterans hospital) far from his home. Long red dotted line on a map showing the far distance. Gray muted tones. Worried expression. Korean city background.",
+      "image_prompt_after": "Illustration of the same elderly Korean man smiling, walking into a nearby neighborhood hospital close to his home. Short green path on map. Bright colors, spring flowers, warm sunshine. Relieved and happy expression."
+    },
+    {
+      "id": "03",
+      "name": "Policy Overview",
+      "anchor": "#policy",
+      "height_estimate": "620px",
+      "layout_type": "single-column, infographic-centered",
+      "background": "#FFFFFF",
+      "text_color": "#1A1A2E",
+      "key_elements": ["section_label", "intro_text", "legal_basis_badge", "expansion_infographic_49to140", "institution_breakdown_chart"],
+      "image_prompt": "Clean infographic showing numbers 49 transforming to 140 with dynamic upward arrow. Hospital icons multiplying. Pie chart showing breakdown: 47 tertiary hospitals (blue), 5 veterans hospitals (red), 86 commissioned hospitals (green), 2 others (gray). White background, flat design, Korean government report style."
+    },
+    {
+      "id": "04",
+      "name": "How It Works",
+      "anchor": "#howworks",
+      "height_estimate": "700px",
+      "layout_type": "3-step-vertical-infographic",
+      "background": "#003478",
+      "text_color": "#FFFFFF",
+      "key_elements": ["section_label", "section_title", "step_cards_x3_with_connectors", "pass_badge"],
+      "image_prompt": "3-step horizontal flowchart infographic. Step 1: Phone icon with 'Confirm eligibility at local veterans office'. Step 2: Hospital building icon with 'Visit nearby hospital for diagnosis certificate'. Step 3: Document with checkmark icon with 'Veterans Review Board assessment'. Arrows connecting steps. Blue gradient (#003478). Clean flat design. Include 'Physical Exam PASS' stamp on step 3."
+    },
+    {
+      "id": "05",
+      "name": "Benefits",
+      "anchor": "#benefits",
+      "height_estimate": "580px",
+      "layout_type": "icon-grid + comparison-bar",
+      "background": "#F5F7FA",
+      "text_color": "#1A1A2E",
+      "key_elements": ["section_title", "benefit_icon_cards_x5", "comparison_bar_chart"],
+      "image_prompt": "Set of 5 circular benefit icons: (1) House+Hospital proximity icon, (2) Clock+checkmark time-saving icon, (3) Simplified document icon, (4) Korea map with pins icon, (5) Balance scale (fairness) icon. Blue monochrome (#003478) flat design. Also a comparison bar chart showing before vs after accessibility improvement."
+    },
+    {
+      "id": "06",
+      "name": "Hospital Map",
+      "anchor": "#hospitals",
+      "height_estimate": "900px",
+      "layout_type": "map-infographic + regional-accordion",
+      "background": "#FFFFFF",
+      "text_color": "#1A1A2E",
+      "key_elements": ["headline", "korea_map_with_pins", "region_stats_grid", "hospital_accordion_by_region", "search_tip_box"],
+      "image_prompt": "Map of South Korea with 140 hospital location pins. Blue pins for tertiary hospitals, red pins for veterans hospitals, green pins for commissioned hospitals. Seoul metropolitan area inset/zoom. Clean vector style. Legend included. Regional statistics bar graph on the side.",
+      "javascript": "Regional hospital accordion toggle + hospital search filter"
+    },
+    {
+      "id": "07",
+      "name": "Target Audience",
+      "anchor": "#target",
+      "height_estimate": "480px",
+      "layout_type": "2-card-grid (eligible vs not-eligible)",
+      "background": "#F5F7FA",
+      "text_color": "#1A1A2E",
+      "key_elements": ["eligible_card_green", "not_eligible_card_gray", "important_note_box", "choice_note"],
+      "image_prompt": "Two-column card layout infographic. Left card (green border): Checkmark icons with eligible target list. Right card (gray border): X-mark icons with ineligible list. Clean card design with subtle shadows. Government official style."
+    },
+    {
+      "id": "08",
+      "name": "FAQ",
+      "anchor": "#faq",
+      "height_estimate": "680px",
+      "layout_type": "accordion-faq",
+      "background": "#FFFFFF",
+      "text_color": "#1A1A2E",
+      "key_elements": ["section_title", "faq_accordion_x7_js"],
+      "javascript": "FAQ accordion toggle"
+    },
+    {
+      "id": "09",
+      "name": "Required Documents",
+      "anchor": "#documents",
+      "height_estimate": "700px",
+      "layout_type": "table + checklist",
+      "background": "#F5F7FA",
+      "text_color": "#1A1A2E",
+      "key_elements": ["form_info_card", "specialist_table", "exam_items_accordion", "caution_list"],
+      "image_prompt": "Medical clipboard with checklist illustration. Diagnosis certificate and medical opinion forms neatly organized. Stethoscope and pen beside. Clean, professional medical illustration style. Blue (#003478) tone."
+    },
+    {
+      "id": "10",
+      "name": "CTA",
+      "anchor": "#cta",
+      "height_estimate": "480px",
+      "layout_type": "single-column, conversion-focus",
+      "background": "linear-gradient(160deg, #003478 0%, #1B3A5C 60%, #C8102E 100%)",
+      "text_color": "#FFFFFF",
+      "key_elements": ["headline", "action_steps_x3", "phone_number_large", "website_link", "closing_text"],
+      "image_prompt": "Warm blue gradient background banner. Large phone icon with '1577-0606' number prominently displayed. National Veterans Affairs logo. Korean flag and Mugunghwa (hibiscus) motif. Sunrise symbolizing bright future. Warm and official government poster style. 16:9 ratio."
+    }
+  ],
+  "total_estimated_height": "약 6,500px ~ 7,500px (모바일 375px 기준)",
+  "fixed_elements": {
+    "bottom_cta_bar": {
+      "position": "fixed bottom",
+      "display": "mobile only (hidden on desktop 768px+)",
+      "height": "72px",
+      "background": "#003478",
+      "content": ["phone_icon", "call_1577_0606_button", "find_hospital_button"],
+      "behavior": "hidden in hero section, visible after scroll"
+    }
+  },
+  "animations": {
+    "cta_pulse": "keyframes pulse — scale 1 to 1.02, 2s infinite ease-in-out",
+    "faq_arrow": "transform rotate(180deg) on open, transition 0.3s",
+    "fixed_cta_bar": "translateY + opacity transition 0.3s on scroll",
+    "counter_animation": "49 → 140 숫자 카운팅 애니메이션 on scroll into view",
+    "global_scroll": "scroll-behavior: smooth"
+  },
+  "images": {
+    "strategy": "AI 생성 이미지 프롬프트 기반 — 각 섹션별 image_prompt 필드 참조",
+    "generation_tools": ["Canva MCP (mcp__claude_ai_Canva__generate-design)", "DALL-E", "Midjourney"],
+    "fallback": "CSS gradient placeholders with descriptive text overlay",
+    "style_guide": {
+      "color_palette": ["#003478", "#C8102E", "#1B3A5C", "#FFFFFF", "#F5F7FA"],
+      "illustration_style": "따뜻하고 신뢰감 있는 한국 정부 공식 일러스트 스타일",
+      "infographic_style": "깔끔한 플랫 디자인, 큰 텍스트, 명확한 대비",
+      "target_readability": "고령자(70대 이상)도 인식 가능한 큰 아이콘과 텍스트"
+    }
+  },
+  "accessibility": {
+    "touch_targets": "min 48px height on all interactive elements",
+    "font_minimum": "15px (고령자 가독성 고려)",
+    "color_contrast": "WCAG AA 이상",
+    "lang": "ko",
+    "aria_labels": "모든 인터랙티브 요소에 적용"
+  },
+  "output_file": "design/wireframe.html",
+  "created_at": "2026-02-28"
+}
