@@ -1,6 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/design/wireframe.html" },
-    { "source": "/:path+", "destination": "/design/:path+" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
