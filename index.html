@@ -660,6 +660,59 @@
     }
     .site-footer strong { color: rgba(255,255,255,0.7); }
 
+    /* ===== 영상 섹션 ===== */
+    .video-section { background: var(--bg-light); }
+    .video-container {
+      position: relative;
+      max-width: 640px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      cursor: pointer;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+    .video-container img.video-thumb {
+      width: 100%; height: 100%; object-fit: cover;
+      display: block; transition: opacity 0.3s;
+    }
+    .video-play-btn {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 72px; height: 72px;
+      background: rgba(0, 52, 120, 0.85);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s, background 0.2s;
+      pointer-events: none;
+    }
+    .video-play-btn::after {
+      content: '';
+      display: block;
+      width: 0; height: 0;
+      border-style: solid;
+      border-width: 12px 0 12px 22px;
+      border-color: transparent transparent transparent #fff;
+      margin-left: 4px;
+    }
+    .video-container:hover .video-play-btn {
+      transform: translate(-50%, -50%) scale(1.1);
+      background: rgba(0, 52, 120, 0.95);
+    }
+    .video-duration {
+      position: absolute; bottom: 12px; right: 12px;
+      background: rgba(0,0,0,0.7); color: #fff;
+      font-size: 13px; font-weight: 600;
+      padding: 3px 10px; border-radius: var(--radius-pill);
+    }
+    .video-container video {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .video-container.playing img.video-thumb,
+    .video-container.playing .video-play-btn,
+    .video-container.playing .video-duration { display: none; }
+
     /* ===== 반응형 ===== */
     @media (min-width: 768px) {
       .section { padding: 100px 0; }
@@ -783,6 +836,22 @@
     </div>
     <div class="ba-highlight">
       <div class="ba-highlight-text">발급기관 약 <em>2.9배</em> 확대 &mdash; 49곳 &#8594; <em>140곳</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- 영상 섹션 -->
+<section id="video" class="section video-section">
+  <div class="container text-center">
+    <div class="label">정책 안내 영상</div>
+    <h2 class="title">1분이면 충분합니다</h2>
+    <p class="desc centered">달라진 장해진단서 발급 제도, 영상으로 한눈에 확인하세요.</p>
+  </div>
+  <div class="container">
+    <div class="video-container" id="videoPlayer" role="button" tabindex="0" aria-label="정책 안내 영상 재생 (1분 10초)">
+      <img class="video-thumb" src="video/국가보훈 장해진단서 발급기관 확대-Cover.jpg" alt="국가보훈 장해진단서 발급병원 140곳 확대 안내 영상 썸네일">
+      <div class="video-play-btn" aria-hidden="true"></div>
+      <div class="video-duration">1:10</div>
     </div>
   </div>
 </section>
@@ -1178,6 +1247,31 @@
     arrow.classList.toggle('open');
     btn.setAttribute('aria-expanded', String(!isOpen));
   }
+
+  // 영상 썸네일 클릭 → 재생
+  (function() {
+    var wrap = document.getElementById('videoPlayer');
+    if (!wrap) return;
+    function play() {
+      if (wrap.classList.contains('playing')) return;
+      var video = document.createElement('video');
+      video.src = 'video/국가보훈 장해진단서 발급기관 확대.mp4';
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      video.setAttribute('preload', 'auto');
+      wrap.appendChild(video);
+      wrap.classList.add('playing');
+      video.addEventListener('ended', function() {
+        wrap.removeChild(video);
+        wrap.classList.remove('playing');
+      });
+    }
+    wrap.addEventListener('click', play);
+    wrap.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); }
+    });
+  })();
 
   // 고정 CTA 바 표시/숨김
   (function() {
