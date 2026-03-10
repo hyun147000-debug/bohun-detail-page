@@ -208,52 +208,6 @@
     .hero-stat-arrow { font-size: 26px; color: rgba(255,255,255,0.3); }
     .hero-btns { display: flex; flex-direction: column; gap: 12px; align-items: center; }
 
-    /* ===== 02 BEFORE/AFTER ===== */
-    #beforeafter { background: var(--bg-light); }
-    .ba-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 32px; }
-    .ba-card {
-      border-radius: var(--radius-lg); padding: 28px 24px;
-      position: relative; overflow: hidden;
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-    .ba-card:hover { transform: translateY(-3px); }
-    .ba-card.before { background: #fff; border: 1px solid var(--border); }
-    .ba-card.before:hover { box-shadow: var(--shadow-md); }
-    .ba-card.after { background: linear-gradient(145deg, var(--primary), #0050b3); color: #fff; }
-    .ba-card.after:hover { box-shadow: 0 12px 36px rgba(0,52,120,0.3); }
-    .ba-card-img {
-      width: 100%; max-height: 240px; object-fit: cover;
-      border-radius: var(--radius); margin-bottom: 20px;
-    }
-    .ba-badge {
-      display: inline-flex; padding: 6px 16px;
-      border-radius: var(--radius-pill); font-size: 14px;
-      font-weight: 700; margin-bottom: 16px;
-    }
-    .before .ba-badge { background: var(--border-light); color: var(--text-light); }
-    .after .ba-badge { background: var(--secondary); color: #fff; }
-    .ba-title { font-size: 20px; font-weight: 800; margin-bottom: 16px; }
-    .before .ba-title { color: var(--text-light); }
-    .ba-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .ba-list li {
-      display: flex; align-items: flex-start; gap: 10px;
-      font-size: 15px; line-height: 1.6;
-    }
-    .ba-list .ico {
-      width: 22px; height: 22px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 11px; flex-shrink: 0; margin-top: 2px;
-    }
-    .before .ico { background: #FEE2E2; color: #DC2626; }
-    .after .ico { background: rgba(255,255,255,0.2); color: #fff; }
-    .ba-highlight {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #fff; border-radius: var(--radius-lg);
-      padding: 24px; text-align: center;
-    }
-    .ba-highlight-text { font-size: 22px; font-weight: 900; }
-    .ba-highlight-text em { color: var(--accent-gold); font-style: normal; }
-
     /* ===== 03 POLICY ===== */
     #policy { background: var(--bg-white); }
     .policy-box {
@@ -801,7 +755,6 @@
     /* ===== 반응형 ===== */
     @media (min-width: 768px) {
       .section { padding: 100px 0; }
-      .ba-grid { grid-template-columns: 1fr 1fr; }
       .benefits-grid { grid-template-columns: 1fr 1fr; }
       .inst-grid { grid-template-columns: 1fr 1fr; }
       .cat-grid { grid-template-columns: repeat(4, 1fr); }
@@ -837,7 +790,6 @@
 <nav class="top-nav">
   <div class="top-nav-inner">
     <a href="#" class="nav-brand"><img src="design/images/logo_mpva.jpg" alt="국가보훈부" style="height:38px; vertical-align:middle; display:block;"></a>
-    <a href="#beforeafter" class="nav-link">변경사항</a>
     <a href="#policy" class="nav-link">정책소개</a>
     <a href="#howworks" class="nav-link">이용절차</a>
     <a href="#benefits" class="nav-link">혜택</a>
@@ -886,44 +838,6 @@
 </header>
 
 <main>
-
-<!-- 02 BEFORE/AFTER -->
-<section id="beforeafter" class="section">
-  <div class="container text-center">
-    <div class="label">달라지는 점</div>
-    <h2 class="title">무엇이 바뀌나요?</h2>
-    <p class="desc centered">2026년 1월부터 장해진단서 발급 방식이 이렇게 달라집니다.</p>
-  </div>
-  <div class="container">
-    <div class="ba-grid">
-      <div class="ba-card before">
-        <img src="design/images/02_before.png" alt="먼 보훈병원까지 이동하는 피곤한 어르신" class="ba-card-img" loading="lazy">
-        <div class="ba-badge">&#10060; 기존</div>
-        <h3 class="ba-title">불편했던 기존 방식</h3>
-        <ul class="ba-list">
-          <li><span class="ico">&#10007;</span><span>전국 5개 보훈병원에서만 신체검사 가능</span></li>
-          <li><span class="ico">&#10007;</span><span>서울·부산·대전·대구·광주까지 장거리 이동</span></li>
-          <li><span class="ico">&#10007;</span><span>긴 예약 대기, 반복 방문의 부담</span></li>
-          <li><span class="ico">&#10007;</span><span>발급기관도 상급종합병원 등 49곳에 한정</span></li>
-        </ul>
-      </div>
-      <div class="ba-card after">
-        <img src="design/images/02_after.png" alt="집 근처 병원을 편리하게 방문하는 어르신" class="ba-card-img" loading="lazy">
-        <div class="ba-badge">&#9989; 2026년 1월부터</div>
-        <h3 class="ba-title">편리해진 새 방식</h3>
-        <ul class="ba-list">
-          <li><span class="ico">&#10003;</span><span>전국 <strong>140곳</strong>에서 장해진단서 발급 가능</span></li>
-          <li><span class="ico">&#10003;</span><span>집 근처 종합병원(위탁병원)에서 바로 발급</span></li>
-          <li><span class="ico">&#10003;</span><span>진단서 제출 시 보훈병원 신체검사 <strong>생략</strong></span></li>
-          <li><span class="ico">&#10003;</span><span>보훈심사위원회에서 바로 상이등급 심사</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="ba-highlight">
-      <div class="ba-highlight-text">발급기관 약 <em>2.9배</em> 확대 &mdash; 49곳 &#8594; <em>140곳</em></div>
-    </div>
-  </div>
-</section>
 
 <!-- 영상 섹션 -->
 <section id="video" class="section video-section">
@@ -1727,7 +1641,7 @@
   // 스크롤 페이드인
   (function() {
     if (!window.IntersectionObserver) return;
-    var targets = document.querySelectorAll('.label, .title, .desc, .ba-card, .benefit-card, .inst-card, .how-step, .target-card, .faq-item, .docs-card, .cta-step, .counter-block, .ba-highlight, .pass-badge, .effects-box, .cat-card');
+    var targets = document.querySelectorAll('.label, .title, .desc, .benefit-card, .inst-card, .how-step, .target-card, .faq-item, .docs-card, .cta-step, .counter-block, .pass-badge, .effects-box, .cat-card');
     targets.forEach(function(el) {
       el.style.opacity = '0'; el.style.transform = 'translateY(16px)';
       el.style.transition = 'opacity 0.45s ease-out, transform 0.45s ease-out';
