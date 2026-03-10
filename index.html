@@ -153,6 +153,11 @@
       min-height: 100vh; min-height: 100svh;
       display: flex; align-items: center;
     }
+    .hero-logo {
+      position: absolute; top: 20px; right: 20px; z-index: 2;
+      height: 40px; width: auto; opacity: 0.7;
+      filter: brightness(0) invert(1);
+    }
     .hero-bg {
       position: absolute; inset: 0;
       background: url('design/images/01_hero.png') center 30% / cover no-repeat;
@@ -803,6 +808,7 @@
 <header>
 <section id="hero">
   <div class="hero-bg" role="img" aria-label="현대적인 병원 안내센터에서 접수하는 어르신"></div>
+  <img src="design/images/logo_mpva_white.png" alt="국가보훈부" class="hero-logo">
   <div class="hero-wrap">
     <div class="hero-official">국가보훈부 공식 안내</div>
     <div class="hero-date">2026년 1월 시행</div>
